@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run only sanity tests
-pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --browser chrome
+python3 -m pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --browser chrome
 
 # Run sanity OR regression tests
 # pytest -v -s -m "sanity or regression" --html=Reports/report.html testCases/ --browser chrome
