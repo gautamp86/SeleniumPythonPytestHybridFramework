@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd /Users/snehalpophali/Desktop/pythonautomation/SeleniumHybridFramework
+
+# Activate virtual environment using absolute path
+source /Users/snehalpophali/Desktop/pythonautomation/SeleniumHybridFramework/venv/bin/activate
+
 # Run only sanity tests
 python3 -m pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --browser chrome
 
