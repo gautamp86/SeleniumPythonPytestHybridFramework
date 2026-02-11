@@ -1,9 +1,19 @@
 #!/bin/bash
+set -e
 
-# Run only sanity tests
+echo "Creating virtual environment..."
 python3 -m venv venv
+
+echo "Activating virtual environment..."
 source venv/bin/activate
-pip install -r requirements.txt
+
+echo "Upgrading pip..."
+python -m pip install --upgrade pip
+
+echo "Installing dependencies..."
+python -m pip install -r requirements.txt
+
+echo "Running pytest..."
 python -m pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --browser chrome
 
 # Run sanity OR regression tests
