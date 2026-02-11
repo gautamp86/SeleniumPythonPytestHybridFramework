@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Run only sanity tests
+python3 -m venv venv
 source venv/bin/activate
+pip install -r requirements.txt
 python3 -m pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --browser chrome
 
 # Run sanity OR regression tests
