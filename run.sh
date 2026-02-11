@@ -4,7 +4,7 @@
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python3 -m pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --browser chrome
+python -m pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --browser chrome
 
 # Run sanity OR regression tests
 # pytest -v -s -m "sanity or regression" --html=Reports/report.html testCases/ --browser chrome
