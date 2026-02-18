@@ -1,26 +1,32 @@
 from selenium.webdriver.common.by import By
+from pageObjects.BasePage import BasePage
 
-class AddRowPage:
-    lnkPractice_XPATH = "//a[normalize-space()='Practice']"
-    lnkTest_exception_link_text = "Test Exceptions"
-    btnAdd_id = "add_btn"
-    msgConfirmation_id = "confirmation"
-    txtRow_2_id = "row2"
 
-    def __init__(self,driver):
-        self.driver = driver
+class AddRowPage(BasePage):
 
-    def navigateToPracticePage(self):
-        self.driver.find_element(By.XPATH,self.lnkPractice_XPATH).click()
+    # ⭐ Encapsulated locators (private)
+    __lnk_practice = (By.XPATH, "//a[normalize-space()='Practice']")
+    __lnk_test_exception = (By.LINK_TEXT, "Test Exceptions")
+    __btn_add = (By.ID, "add_btn")
+    __msg_confirmation = (By.ID, "confirmation")
+    __txt_row_2 = (By.ID, "row2")
 
-    def navigateToTestExceptionsPage(self):
-        self.driver.find_element(By.LINK_TEXT,self.lnkTest_exception_link_text).click()
+    def __init__(self, driver):
+        super().__init__(driver)
 
-    def clickAddBtn(self):
-        self.driver.find_element(By.ID,self.btnAdd_id).click()
+    # ⭐ Business actions (Abstraction)
 
-    def displayConfirmationMessage(self):
-        return self.driver.find_element(By.ID,self.msgConfirmation_id).text
+    def navigate_to_practice_page(self):
+        self.click(self.__lnk_practice)
 
-    def secondRowDisplayed(self):
-        return self.driver.find_element(By.ID,self.txtRow_2_id).is_displayed()
+    def navigate_to_test_exceptions_page(self):
+        self.click(self.__lnk_test_exception)
+
+    def click_add_button(self):
+        self.click(self.__btn_add)
+
+    def get_confirmation_message(self):
+        return self.get_text(self.__msg_confirmation)
+
+    def is_second_row_displayed(self):
+        return self.is_displayed(self.__txt_row_2)

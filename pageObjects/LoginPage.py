@@ -1,30 +1,20 @@
 from selenium.webdriver.common.by import By
-class LoginPage:
-    textbox_username_id = "username"
-    textbox_password_id = "password"
-    button_login_xpath = "//button[@id='submit']"
-    link_logout_linktext = "Log out"
+from pageObjects.BasePage import BasePage
 
-    def __init__(self,driver):
-        self.driver = driver
+class LoginPage(BasePage):
+    __username = (By.ID, "username")
+    __password = (By.ID, "password")
+    __login_btn = (By.XPATH, "//button[@id='submit']")
+    __logout = (By.LINK_TEXT, "Log out")
 
-    def setUserName(self,username):
-        #self.driver.find_element_by_id(self.textbox_username_id).clear()
-        #self.driver.find_elememt_by_id(self.textbox_username_id).send_keys(username)
-        self.driver.find_element(By.ID,self.textbox_username_id).clear()
-        self.driver.find_element(By.ID,self.textbox_username_id).send_keys(username)
+    def __init__(self, driver):
+        super().__init__(driver)
 
-    def setPassword(self,password):
-        #self.driver.find_element_by_id(self.textbox_password_id).clear()
-        #self.driver.find_elememt_by_id(self.textbox_password_id).send_keys(password)
-         self.driver.find_element(By.ID,self.textbox_password_id).clear()
-         self.driver.find_element(By.ID,self.textbox_password_id).send_keys(password)
-
-    def clickLoginButton(self):
-        #self.driver.find_element_by_xpath(self.button_login_xpath).click()
-        self.driver.find_element(By.XPATH,self.button_login_xpath).click()
+    def login(self, username, password):
+        self.type(self.__username, username)
+        self.type(self.__password, password)
+        self.click(self.__login_btn)
 
     def logout(self):
-        #self.driver.find_element_by_xpath(self.link_logout_linktext).click()
-        self.driver.find_element(By.LINK_TEXT,self.link_logout_linktext).click()
+        self.click(self.__logout)
 

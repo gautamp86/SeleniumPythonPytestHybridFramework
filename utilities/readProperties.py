@@ -10,6 +10,10 @@ class ReadConfig:
         return url
 
     @staticmethod
+    def getBrowser():
+        return config.get('Test Environment', "browser")
+
+    @staticmethod
     def getUseremail():
         username = config.get('Test Environment', 'username')
         return username

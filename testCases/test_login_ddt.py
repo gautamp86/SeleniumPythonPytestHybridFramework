@@ -1,65 +1,59 @@
-import time
-
 from pageObjects.LoginPage import LoginPage
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 from utilities import ExcelUtils
+from utilities.BaseClass import BaseClass
 import pytest
 
-class Test_002_DDT_Login:
+
+class Test_002_DDT_Login(BaseClass):
+
     baseUrl = ReadConfig.getApplicationUrl()
-    path="TestData/DataLogin.xlsx"
+    path = "TestData/DataLogin.xlsx"
     logger = LogGen.loggen()
 
     @pytest.mark.regression
-    def test_login_ddt(self,setup):
-        self.logger.info("***************Test_002_DDT_Login***************")
-        self.logger.info("***************Verifying login test***************")
-        self.driver = setup
-        self.driver.get(self.baseUrl)
-        self.lp = LoginPage(self.driver)
-        self.rows = ExcelUtils.getRowCount(self.path,'Sheet1')
-        print("Number of rows = ",self.rows)
+    def test_login_ddt(self, setup):
 
-        list_status = [] #Empty list variable
+        self.logger.info("******** Test_002_DDT_Login Started ********")
 
-        for row in range(2,self.rows+1):
-            self.user = ExcelUtils.readData(self.path,'Sheet1',row,1)
-            self.password = ExcelUtils.readData(self.path, 'Sheet1', row, 2)
-            self.exp = ExcelUtils.readData(self.path, 'Sheet1', row, 3)
-            self.lp.setUserName(self.user)
-            self.lp.setPassword(self.password)
-            self.lp.clickLoginButton()
-            time.sleep(5)
+        driver = setup
+        driver.get(self.baseUrl)
 
-            act_title = self.driver.title
+        lp = LoginPage(driver)
+
+        rows = ExcelUtils.getRowCount(self.path, "Sheet1")
+        self.logger.info(f"Total rows = {rows}")
+
+        list_status = []
+
+        for row in range(2, rows + 1):
+
+            user = ExcelUtils.readData(self.path, "Sheet1", row, 1)
+            password = ExcelUtils.readData(self.path, "Sheet1", row, 2)
+            exp = ExcelUtils.readData(self.path, "Sheet1", row, 3)
+
+            # ⭐ abstraction (clean login)
+            lp.login(user, password)
+
+            act_title = driver.title
             exp_title = "Logged In Successfully | Practice Test Automation"
 
-            if act_title == exp_title:
-                if self.exp == "Pass":
-                    self.logger.info("***************Passed***************")
-                    self.lp.logout()
-                    list_status.append("Pass")
-                elif self.exp == "Fail":
-                    self.logger.error("***************Fail***************")
-                    self.lp.logout()
-                    list_status.append("Fail")
-            elif act_title != exp_title:
-                if self.exp == "Pass":
-                    self.logger.info("***************Failed****************")
-                    list_status.append("Fail")
-                elif self.exp == "Fail":
-                    self.logger.info("***************Passed******************")
-                    list_status.append("Pass")
+            if act_title == exp_title and exp == "Pass":
+                self.logger.info(f"Row {row} → Passed")
+                lp.logout()
+                list_status.append("Pass")
 
-        if "Fail" not in list_status:
-            self.logger.info("*************** Login DDT test Passed ***************")
-            self.driver.close()
-            assert True
-        else:
-            self.logger.info("*************** Login DDT test Failed ***************")
-            self.driver.close()
-            assert False
+            elif act_title != exp_title and exp == "Fail":
+                self.logger.info(f"Row {row} → Passed (Negative Test)")
+                list_status.append("Pass")
 
-        self.logger.info("*************** End of Login DDT test ***************")
-        self.logger.info("*************** Completed Test_002_DDT_login ***************")
+            else:
+                self.logger.error(f"Row {row} → Failed")
+                self.take_screenshot(driver, f"DDT_Row_{row}")
+                list_status.append("Fail")
+
+        # ⭐ Final validation
+        assert "Fail" not in list_status, "DDT Login test failed"
+
+        self.logger.info("******** Login DDT test completed ********")

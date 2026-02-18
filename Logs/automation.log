@@ -379,3 +379,171 @@
 02-11-2026 11:22:20 AM - INFO - ***************Login test is passed***************
 02-11-2026 11:22:20 AM - INFO - ***************Login test is passed***************
 02-11-2026 11:22:20 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:48:34 AM - INFO - *************** Test_003_AddRow ***************
+02-12-2026 11:48:34 AM - INFO - *************** Test_003_AddRow ***************
+02-12-2026 11:48:34 AM - INFO - *************** Test_003_AddRow ***************
+02-12-2026 11:48:34 AM - INFO - *************** Test_003_AddRow ***************
+02-12-2026 11:48:37 AM - INFO - *************** Login is successful ***************
+02-12-2026 11:48:37 AM - INFO - *************** Login is successful ***************
+02-12-2026 11:48:37 AM - INFO - *************** Login is successful ***************
+02-12-2026 11:48:37 AM - INFO - *************** Login is successful ***************
+02-12-2026 11:48:37 AM - INFO - *************** Verifying Add Row test ***************
+02-12-2026 11:48:37 AM - INFO - *************** Verifying Add Row test ***************
+02-12-2026 11:48:37 AM - INFO - *************** Verifying Add Row test ***************
+02-12-2026 11:48:37 AM - INFO - *************** Verifying Add Row test ***************
+02-12-2026 11:48:48 AM - INFO - *************** Successfully added row 2 ***************
+02-12-2026 11:48:48 AM - INFO - *************** Successfully added row 2 ***************
+02-12-2026 11:48:48 AM - INFO - *************** Successfully added row 2 ***************
+02-12-2026 11:48:48 AM - INFO - *************** Successfully added row 2 ***************
+02-12-2026 11:48:48 AM - INFO - *************** End of Add Row test ***************
+02-12-2026 11:48:48 AM - INFO - *************** End of Add Row test ***************
+02-12-2026 11:48:48 AM - INFO - *************** End of Add Row test ***************
+02-12-2026 11:48:48 AM - INFO - *************** End of Add Row test ***************
+02-12-2026 11:48:48 AM - INFO - *************** Completed Test_003_AddRow ***************
+02-12-2026 11:48:48 AM - INFO - *************** Completed Test_003_AddRow ***************
+02-12-2026 11:48:48 AM - INFO - *************** Completed Test_003_AddRow ***************
+02-12-2026 11:48:48 AM - INFO - *************** Completed Test_003_AddRow ***************
+02-12-2026 11:48:51 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:48:51 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:48:51 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:48:51 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:48:54 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:48:54 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:48:54 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:48:54 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:52:25 AM - INFO - *************** Test_004_LanguageFilter ***************
+02-12-2026 11:52:25 AM - INFO - *************** Test_004_LanguageFilter ***************
+02-12-2026 11:52:25 AM - INFO - *************** Test_004_LanguageFilter ***************
+02-12-2026 11:52:25 AM - INFO - *************** Test_004_LanguageFilter ***************
+02-12-2026 11:52:28 AM - INFO - *************** Login is successful ***************
+02-12-2026 11:52:28 AM - INFO - *************** Login is successful ***************
+02-12-2026 11:52:28 AM - INFO - *************** Login is successful ***************
+02-12-2026 11:52:28 AM - INFO - *************** Login is successful ***************
+02-12-2026 11:52:28 AM - INFO - *************** Verifying Language Filter test ***************
+02-12-2026 11:52:28 AM - INFO - *************** Verifying Language Filter test ***************
+02-12-2026 11:52:28 AM - INFO - *************** Verifying Language Filter test ***************
+02-12-2026 11:52:28 AM - INFO - *************** Verifying Language Filter test ***************
+02-12-2026 11:52:29 AM - INFO - *************** Successfully verified Python language filter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Successfully verified Python language filter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Successfully verified Python language filter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Successfully verified Python language filter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Successfully verified Python language filter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Successfully verified Python language filter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Successfully verified Python language filter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Successfully verified Python language filter ***************
+02-12-2026 11:52:29 AM - INFO - *************** End of Language filter test ***************
+02-12-2026 11:52:29 AM - INFO - *************** End of Language filter test ***************
+02-12-2026 11:52:29 AM - INFO - *************** End of Language filter test ***************
+02-12-2026 11:52:29 AM - INFO - *************** End of Language filter test ***************
+02-12-2026 11:52:29 AM - INFO - *************** Completed Test_003_LanguageFilter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Completed Test_003_LanguageFilter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Completed Test_003_LanguageFilter ***************
+02-12-2026 11:52:29 AM - INFO - *************** Completed Test_003_LanguageFilter ***************
+02-12-2026 11:52:33 AM - INFO - ***************Test_001_Login***************
+02-12-2026 11:52:33 AM - INFO - ***************Test_001_Login***************
+02-12-2026 11:52:33 AM - INFO - ***************Test_001_Login***************
+02-12-2026 11:52:33 AM - INFO - ***************Test_001_Login***************
+02-12-2026 11:52:33 AM - INFO - ***************Verifying home page title***************
+02-12-2026 11:52:33 AM - INFO - ***************Verifying home page title***************
+02-12-2026 11:52:33 AM - INFO - ***************Verifying home page title***************
+02-12-2026 11:52:33 AM - INFO - ***************Verifying home page title***************
+02-12-2026 11:52:34 AM - INFO - ***************Home page title test is passed***************
+02-12-2026 11:52:34 AM - INFO - ***************Home page title test is passed***************
+02-12-2026 11:52:34 AM - INFO - ***************Home page title test is passed***************
+02-12-2026 11:52:34 AM - INFO - ***************Home page title test is passed***************
+02-12-2026 11:52:37 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:52:37 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:52:37 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:52:37 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:52:40 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:52:40 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:52:40 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:52:40 AM - INFO - ***************Login test is passed***************
+02-12-2026 11:52:41 AM - INFO - ***************Test_002_DDT_Login***************
+02-12-2026 11:52:41 AM - INFO - ***************Test_002_DDT_Login***************
+02-12-2026 11:52:41 AM - INFO - ***************Test_002_DDT_Login***************
+02-12-2026 11:52:41 AM - INFO - ***************Test_002_DDT_Login***************
+02-12-2026 11:52:41 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:52:41 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:52:41 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:52:41 AM - INFO - ***************Verifying login test***************
+02-12-2026 11:52:49 AM - INFO - ***************Passed***************
+02-12-2026 11:52:49 AM - INFO - ***************Passed***************
+02-12-2026 11:52:49 AM - INFO - ***************Passed***************
+02-12-2026 11:52:49 AM - INFO - ***************Passed***************
+02-12-2026 11:52:55 AM - INFO - ***************Passed******************
+02-12-2026 11:52:55 AM - INFO - ***************Passed******************
+02-12-2026 11:52:55 AM - INFO - ***************Passed******************
+02-12-2026 11:52:55 AM - INFO - ***************Passed******************
+02-12-2026 11:53:01 AM - INFO - ***************Passed******************
+02-12-2026 11:53:01 AM - INFO - ***************Passed******************
+02-12-2026 11:53:01 AM - INFO - ***************Passed******************
+02-12-2026 11:53:01 AM - INFO - ***************Passed******************
+02-12-2026 11:53:06 AM - INFO - ***************Passed******************
+02-12-2026 11:53:06 AM - INFO - ***************Passed******************
+02-12-2026 11:53:06 AM - INFO - ***************Passed******************
+02-12-2026 11:53:06 AM - INFO - ***************Passed******************
+02-12-2026 11:53:06 AM - INFO - *************** Login DDT test Passed ***************
+02-12-2026 11:53:06 AM - INFO - *************** Login DDT test Passed ***************
+02-12-2026 11:53:06 AM - INFO - *************** Login DDT test Passed ***************
+02-12-2026 11:53:06 AM - INFO - *************** Login DDT test Passed ***************
+02-12-2026 11:53:06 AM - INFO - *************** End of Login DDT test ***************
+02-12-2026 11:53:06 AM - INFO - *************** End of Login DDT test ***************
+02-12-2026 11:53:06 AM - INFO - *************** End of Login DDT test ***************
+02-12-2026 11:53:06 AM - INFO - *************** End of Login DDT test ***************
+02-12-2026 11:53:06 AM - INFO - *************** Completed Test_002_DDT_login ***************
+02-12-2026 11:53:06 AM - INFO - *************** Completed Test_002_DDT_login ***************
+02-12-2026 11:53:06 AM - INFO - *************** Completed Test_002_DDT_login ***************
+02-12-2026 11:53:06 AM - INFO - *************** Completed Test_002_DDT_login ***************
+02-18-2026 07:42:44 PM - INFO - ******** Test_004_LanguageFilter Started ********
+02-18-2026 07:42:44 PM - INFO - ******** Test_004_LanguageFilter Started ********
+02-18-2026 07:42:44 PM - INFO - ******** Test_004_LanguageFilter Started ********
+02-18-2026 07:42:44 PM - INFO - ******** Test_004_LanguageFilter Started ********
+02-18-2026 07:42:47 PM - INFO - Login successful
+02-18-2026 07:42:47 PM - INFO - Login successful
+02-18-2026 07:42:47 PM - INFO - Login successful
+02-18-2026 07:42:47 PM - INFO - Login successful
+02-18-2026 07:42:49 PM - INFO - Python language filter verified successfully
+02-18-2026 07:42:49 PM - INFO - Python language filter verified successfully
+02-18-2026 07:42:49 PM - INFO - Python language filter verified successfully
+02-18-2026 07:42:49 PM - INFO - Python language filter verified successfully
+02-18-2026 07:42:49 PM - INFO - ******** Test_004_LanguageFilter Completed ********
+02-18-2026 07:42:49 PM - INFO - ******** Test_004_LanguageFilter Completed ********
+02-18-2026 07:42:49 PM - INFO - ******** Test_004_LanguageFilter Completed ********
+02-18-2026 07:42:49 PM - INFO - ******** Test_004_LanguageFilter Completed ********
+02-18-2026 07:42:54 PM - INFO - Home page title test passed
+02-18-2026 07:42:54 PM - INFO - Home page title test passed
+02-18-2026 07:42:54 PM - INFO - Home page title test passed
+02-18-2026 07:42:54 PM - INFO - Home page title test passed
+02-18-2026 07:42:59 PM - INFO - Login test passed
+02-18-2026 07:42:59 PM - INFO - Login test passed
+02-18-2026 07:42:59 PM - INFO - Login test passed
+02-18-2026 07:42:59 PM - INFO - Login test passed
+02-18-2026 07:43:02 PM - INFO - ******** Test_002_DDT_Login Started ********
+02-18-2026 07:43:02 PM - INFO - ******** Test_002_DDT_Login Started ********
+02-18-2026 07:43:02 PM - INFO - ******** Test_002_DDT_Login Started ********
+02-18-2026 07:43:02 PM - INFO - ******** Test_002_DDT_Login Started ********
+02-18-2026 07:43:03 PM - INFO - Total rows = 5
+02-18-2026 07:43:03 PM - INFO - Total rows = 5
+02-18-2026 07:43:03 PM - INFO - Total rows = 5
+02-18-2026 07:43:03 PM - INFO - Total rows = 5
+02-18-2026 07:43:05 PM - INFO - Row 2 → Passed
+02-18-2026 07:43:05 PM - INFO - Row 2 → Passed
+02-18-2026 07:43:05 PM - INFO - Row 2 → Passed
+02-18-2026 07:43:05 PM - INFO - Row 2 → Passed
+02-18-2026 07:43:06 PM - INFO - Row 3 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 3 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 3 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 3 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 4 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 4 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 4 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 4 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 5 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 5 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 5 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - Row 5 → Passed (Negative Test)
+02-18-2026 07:43:06 PM - INFO - ******** Login DDT test completed ********
+02-18-2026 07:43:06 PM - INFO - ******** Login DDT test completed ********
+02-18-2026 07:43:06 PM - INFO - ******** Login DDT test completed ********
+02-18-2026 07:43:06 PM - INFO - ******** Login DDT test completed ********

@@ -1,12 +1,14 @@
-import time
+import pytest
 from pageObjects.LoginPage import LoginPage
-from utilities.readProperties import ReadConfig
-from utilities.customLogger import LogGen
 from pageObjects.LanguageTablePage import LanguageTablePage
 from pageObjects.AddRowPage import AddRowPage
-import pytest
+from utilities.readProperties import ReadConfig
+from utilities.customLogger import LogGen
+from utilities.BaseClass import BaseClass
 
-class Test_004_LanguageFilter:
+
+class Test_004_LanguageFilter(BaseClass):
+
     baseUrl = ReadConfig.getApplicationUrl()
     username = ReadConfig.getUseremail()
     password = ReadConfig.getPassword()
@@ -14,36 +16,39 @@ class Test_004_LanguageFilter:
     logger = LogGen.loggen()
 
     @pytest.mark.regression
-    def test_LanguageFiler(self,setup):
-        self.logger.info("*************** Test_004_LanguageFilter ***************")
-        self.driver = setup
-        self.driver.get(self.baseUrl)
-        self.lp = LoginPage(self.driver)
-        self.lp.setUserName(self.username)
-        self.lp.setPassword(self.password)
-        self.lp.clickLoginButton()
-        self.logger.info("*************** Login is successful ***************")
-        self.logger.info("*************** Verifying Language Filter test ***************")
-        self.ar = AddRowPage(self.driver)
-        self.ar.navigateToPracticePage()
-        self.lt = LanguageTablePage(self.driver)
-        self.lt.navigateToTestTable()
-        self.lt.clickPythonRadioButton()
-        languages = self.lt.get_visible_languages()
-        for lang in languages:
-            if lang == "Python":
-                self.logger.info("*************** Successfully verified Python language filter ***************")
-                assert True
-            else:
-                self.driver.save_screenshot("./Screenshots/" + "test_LanguageFilter.png")
-                self.logger.info("*************** Language filter is not working ***************")
-                assert False
+    def test_LanguageFilter(self, setup):
 
-        self.logger.info("*************** End of Language filter test ***************")
-        self.logger.info("*************** Completed Test_003_LanguageFilter ***************")
+        self.logger.info("******** Test_004_LanguageFilter Started ********")
 
+        driver = setup
+        driver.get(self.baseUrl)
 
+        # ⭐ Login (Abstraction)
+        lp = LoginPage(driver)
+        lp.login(self.username, self.password)
 
+        self.logger.info("Login successful")
 
+        # ⭐ Navigate to Practice page
+        ar = AddRowPage(driver)
+        ar.navigate_to_practice_page()
 
+        # ⭐ Language table actions
+        lt = LanguageTablePage(driver)
+        lt.navigate_to_test_table()
+        lt.click_python_radio_button()
 
+        languages = lt.get_visible_languages()
+
+        try:
+            # verify all visible languages are Python
+            assert all(lang == "Python" for lang in languages)
+
+            self.logger.info("Python language filter verified successfully")
+
+        except AssertionError:
+            self.take_screenshot(driver, "test_LanguageFilter")
+            self.logger.error("Language filter validation failed")
+            raise
+
+        self.logger.info("******** Test_004_LanguageFilter Completed ********")

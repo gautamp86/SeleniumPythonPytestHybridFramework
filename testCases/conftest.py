@@ -1,22 +1,19 @@
 import pytest
 from selenium import webdriver
+from utilities.DriverFactory import DriverFactory
 from pytest_metadata.plugin import metadata_key
+from utilities.readProperties import ReadConfig
+
 
 @pytest.fixture
-def setup(browser):
-    if browser == "chrome":
-        driver = webdriver.Chrome()
-        print("Launching chrome")
-        driver.maximize_window()
-    elif browser == "firefox":
-        driver = webdriver.Firefox()
-        print("Launching firefox")
-        driver.maximize_window()
-    else:
-        driver = webdriver.Edge()
-        print("Launching Edge")
-        driver.maximize_window()
+def setup():
+    browser = ReadConfig.getBrowser()
+
+    driver = DriverFactory().get_driver(browser)
+    driver.maximize_window()
+
     yield driver
+
     driver.quit()
 
 def pytest_addoption(parser): # This will get the value from cli/hooks

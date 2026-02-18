@@ -1,11 +1,13 @@
-import time
+import pytest
 from pageObjects.LoginPage import LoginPage
+from pageObjects.AddRowPage import AddRowPage
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
-from pageObjects.AddRowPage import AddRowPage
-import pytest
+from utilities.BaseClass import BaseClass
 
-class Test_003_AddRow:
+
+class Test_003_AddRow(BaseClass):
+
     baseUrl = ReadConfig.getApplicationUrl()
     username = ReadConfig.getUseremail()
     password = ReadConfig.getPassword()
@@ -13,31 +15,38 @@ class Test_003_AddRow:
     logger = LogGen.loggen()
 
     @pytest.mark.sanity
-    def test_AddRow(self,setup):
-        self.logger.info("*************** Test_003_AddRow ***************")
-        self.driver = setup
-        self.driver.get(self.baseUrl)
-        self.lp = LoginPage(self.driver)
-        self.lp.setUserName(self.username)
-        self.lp.setPassword(self.password)
-        self.lp.clickLoginButton()
-        self.logger.info("*************** Login is successful ***************")
-        self.logger.info("*************** Verifying Add Row test ***************")
-        self.ar = AddRowPage(self.driver)
-        self.ar.navigateToPracticePage()
-        self.ar.navigateToTestExceptionsPage()
-        self.ar.clickAddBtn()
-        time.sleep(10)
-        confirmation_message = self.ar.displayConfirmationMessage()
-        if confirmation_message == "Row 2 was added":
-            if self.ar.secondRowDisplayed():
-                self.logger.info("*************** Successfully added row 2 ***************")
-                assert True
-            else:
-                self.driver.save_screenshot("./Screenshots/" + "test_AddRow.png")
-                self.logger.info("*************** Row 2 was not added ***************")
-                assert False
+    def test_AddRow(self, setup):
 
-        self.logger.info("*************** End of Add Row test ***************")
-        self.logger.info("*************** Completed Test_003_AddRow ***************")
+        self.logger.info("******** Test_003_AddRow Started ********")
 
+        driver = setup
+        driver.get(self.baseUrl)
+
+        # ⭐ Login (Abstraction)
+        lp = LoginPage(driver)
+        lp.login(self.username, self.password)
+
+        self.logger.info("Login successful")
+
+        # ⭐ Add Row flow
+        ar = AddRowPage(driver)
+
+        ar.navigate_to_practice_page()
+        ar.navigate_to_test_exceptions_page()
+        ar.click_add_button()
+
+        # ⭐ No time.sleep needed (handled by BasePage waits)
+        confirmation_message = ar.get_confirmation_message()
+
+        try:
+            assert confirmation_message == "Row 2 was added"
+            assert ar.is_second_row_displayed()
+
+            self.logger.info("Row 2 added successfully")
+
+        except AssertionError:
+            self.take_screenshot(driver, "test_AddRow")
+            self.logger.error("Add Row test failed")
+            raise
+
+        self.logger.info("******** Test_003_AddRow Completed ********")
