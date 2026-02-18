@@ -547,3 +547,71 @@
 02-18-2026 07:43:06 PM - INFO - ******** Login DDT test completed ********
 02-18-2026 07:43:06 PM - INFO - ******** Login DDT test completed ********
 02-18-2026 07:43:06 PM - INFO - ******** Login DDT test completed ********
+02-18-2026 07:52:30 PM - INFO - ******** Test_003_AddRow Started ********
+02-18-2026 07:52:30 PM - INFO - ******** Test_003_AddRow Started ********
+02-18-2026 07:52:30 PM - INFO - ******** Test_003_AddRow Started ********
+02-18-2026 07:52:30 PM - INFO - ******** Test_003_AddRow Started ********
+02-18-2026 07:52:33 PM - INFO - Login successful
+02-18-2026 07:52:33 PM - INFO - Login successful
+02-18-2026 07:52:33 PM - INFO - Login successful
+02-18-2026 07:52:33 PM - INFO - Login successful
+02-18-2026 07:52:39 PM - INFO - Row 2 added successfully
+02-18-2026 07:52:39 PM - INFO - Row 2 added successfully
+02-18-2026 07:52:39 PM - INFO - Row 2 added successfully
+02-18-2026 07:52:39 PM - INFO - Row 2 added successfully
+02-18-2026 07:52:39 PM - INFO - ******** Test_003_AddRow Completed ********
+02-18-2026 07:52:39 PM - INFO - ******** Test_003_AddRow Completed ********
+02-18-2026 07:52:39 PM - INFO - ******** Test_003_AddRow Completed ********
+02-18-2026 07:52:39 PM - INFO - ******** Test_003_AddRow Completed ********
+02-18-2026 07:52:41 PM - INFO - ******** Test_004_LanguageFilter Started ********
+02-18-2026 07:52:41 PM - INFO - ******** Test_004_LanguageFilter Started ********
+02-18-2026 07:52:41 PM - INFO - ******** Test_004_LanguageFilter Started ********
+02-18-2026 07:52:41 PM - INFO - ******** Test_004_LanguageFilter Started ********
+02-18-2026 07:52:44 PM - INFO - Login successful
+02-18-2026 07:52:44 PM - INFO - Login successful
+02-18-2026 07:52:44 PM - INFO - Login successful
+02-18-2026 07:52:44 PM - INFO - Login successful
+02-18-2026 07:52:45 PM - INFO - Python language filter verified successfully
+02-18-2026 07:52:45 PM - INFO - Python language filter verified successfully
+02-18-2026 07:52:45 PM - INFO - Python language filter verified successfully
+02-18-2026 07:52:45 PM - INFO - Python language filter verified successfully
+02-18-2026 07:52:45 PM - INFO - ******** Test_004_LanguageFilter Completed ********
+02-18-2026 07:52:45 PM - INFO - ******** Test_004_LanguageFilter Completed ********
+02-18-2026 07:52:45 PM - INFO - ******** Test_004_LanguageFilter Completed ********
+02-18-2026 07:52:45 PM - INFO - ******** Test_004_LanguageFilter Completed ********
+02-18-2026 07:52:48 PM - INFO - Home page title test passed
+02-18-2026 07:52:48 PM - INFO - Home page title test passed
+02-18-2026 07:52:48 PM - INFO - Home page title test passed
+02-18-2026 07:52:48 PM - INFO - Home page title test passed
+02-18-2026 07:52:53 PM - INFO - Login test passed
+02-18-2026 07:52:53 PM - INFO - Login test passed
+02-18-2026 07:52:53 PM - INFO - Login test passed
+02-18-2026 07:52:53 PM - INFO - Login test passed
+02-18-2026 07:52:55 PM - INFO - ******** Test_002_DDT_Login Started ********
+02-18-2026 07:52:55 PM - INFO - ******** Test_002_DDT_Login Started ********
+02-18-2026 07:52:55 PM - INFO - ******** Test_002_DDT_Login Started ********
+02-18-2026 07:52:55 PM - INFO - ******** Test_002_DDT_Login Started ********
+02-18-2026 07:52:56 PM - INFO - Total rows = 5
+02-18-2026 07:52:56 PM - INFO - Total rows = 5
+02-18-2026 07:52:56 PM - INFO - Total rows = 5
+02-18-2026 07:52:56 PM - INFO - Total rows = 5
+02-18-2026 07:52:57 PM - INFO - Row 2 → Passed
+02-18-2026 07:52:57 PM - INFO - Row 2 → Passed
+02-18-2026 07:52:57 PM - INFO - Row 2 → Passed
+02-18-2026 07:52:57 PM - INFO - Row 2 → Passed
+02-18-2026 07:52:58 PM - INFO - Row 3 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 3 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 3 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 3 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 4 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 4 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 4 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 4 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 5 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 5 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 5 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - Row 5 → Passed (Negative Test)
+02-18-2026 07:52:58 PM - INFO - ******** Login DDT test completed ********
+02-18-2026 07:52:58 PM - INFO - ******** Login DDT test completed ********
+02-18-2026 07:52:58 PM - INFO - ******** Login DDT test completed ********
+02-18-2026 07:52:58 PM - INFO - ******** Login DDT test completed ********
