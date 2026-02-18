@@ -59,34 +59,37 @@ This project demonstrates a **Selenium + Python + Pytest Hybrid Automation Frame
                     |     Selenium WebDriver|
                     +----------------------+
 
-project/
+
+SeleniumPythonPytestHybridFramework
 │
-├── pageObjects/
-│ ├── BasePage.py
-│ ├── LoginPage.py
-│ ├── AddRowPage.py
-│ ├── LanguageTablePage.py
+├── 📁 pageObjects
+│   ├── BasePage.py
+│   ├── LoginPage.py
+│   ├── AddRowPage.py
+│   └── LanguageTablePage.py
 │
-├── utilities/
-│ ├── DriverFactory.py
-│ ├── BaseClass.py
-│ ├── readProperties.py
-│ ├── customLogger.py
-│ ├── ExcelUtils.py
+├── 📁 utilities
+│   ├── DriverFactory.py
+│   ├── BaseClass.py
+│   ├── readProperties.py
+│   ├── customLogger.py
+│   └── ExcelUtils.py
 │
-├── testCases/
-│ ├── test_login.py
-│ ├── test_login_ddt.py
-│ ├── test_AddRow.py
-│ ├── test_language_filter.py
+├── 📁 testCases
+│   ├── test_login.py
+│   ├── test_login_ddt.py
+│   ├── test_AddRow.py
+│   └── test_language_filter.py
 │
-├── TestData/
-│ └── DataLogin.xlsx
+├── 📁 TestData
+│   └── DataLogin.xlsx
 │
-├── Screenshots/
+├── 📁 Screenshots
+│
 ├── conftest.py
 ├── config.ini
 └── README.md
+
 
 ---
 
@@ -125,14 +128,21 @@ project/
 ---
 
 ## ⚙️ Configuration
+
 Framework configuration is maintained in:
+
 config.ini
+
+
 Example:
+
+```ini
 [common info]
 baseURL = https://practicetestautomation.com/practice-test-login/
 browser = chrome
 username = student
 password = Password123
+
 ▶️ How to Run Tests
 Run all tests
 pytest
@@ -142,6 +152,7 @@ Run single test case
 pytest testCases/test_login.py::Test_001_Login::test_login
 Run by marker
 pytest -m sanity
+
 🔁 Data Driven Testing (DDT)
 Test data is maintained in:
 
@@ -150,10 +161,14 @@ Excel data is read dynamically using ExcelUtils.
 
 🧪 Cross Browser Execution
 Browser selection is handled through:
+
 DriverFactory.py
 Supported browsers:
+
 Chrome
+
 Firefox
+
 Edge
 
 📸 Screenshots
@@ -164,6 +179,7 @@ Screenshots/
 Logs are generated using custom logger utility:
 
 utilities/customLogger.py
+
 🤝 Git Workflow
 git add .
 git commit -m "message"
@@ -171,12 +187,17 @@ git push origin main
 
 👨‍💻 Author
 Gautam Pophali
+
 Automation QA Engineer
 Python | Selenium | Pytest | API Testing
 
 ⭐ Future Improvements
 Parallel execution (pytest-xdist)
+
 Jenkins CI integration
+
 Allure reporting
+
 API + UI hybrid execution
+
 Docker/Grid execution
