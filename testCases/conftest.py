@@ -4,24 +4,24 @@ from utilities.DriverFactory import DriverFactory
 from pytest_metadata.plugin import metadata_key
 from utilities.readProperties import ReadConfig
 
-
-@pytest.fixture
-def setup():
-    browser = ReadConfig.getBrowser()
-
-    driver = DriverFactory().get_driver(browser)
-    driver.maximize_window()
-
-    yield driver
-
-    driver.quit()
-
 def pytest_addoption(parser): # This will get the value from cli/hooks
     parser.addoption("--browser")
 
 @pytest.fixture
 def browser(request): # This will return the browser value to setup method
     return request.config.getoption("--browser")
+
+@pytest.fixture
+def setup(browser):
+
+    if browser is None:
+        browser = ReadConfig.getBrowser()
+
+    driver = DriverFactory().get_driver(browser)
+    driver.maximize_window()
+    yield driver
+
+    driver.quit()
 
 ##############PyTest HTML Reports##############
 #It is hook for adding envionment info to HTML report

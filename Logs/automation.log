@@ -615,3 +615,17 @@
 02-18-2026 07:52:58 PM - INFO - ******** Login DDT test completed ********
 02-18-2026 07:52:58 PM - INFO - ******** Login DDT test completed ********
 02-18-2026 07:52:58 PM - INFO - ******** Login DDT test completed ********
+03-09-2026 07:43:15 AM - INFO - Home page title test passed
+03-09-2026 07:43:23 AM - INFO - Login test passed
+03-09-2026 04:06:14 PM - INFO - Home page title test passed
+03-09-2026 04:06:21 PM - INFO - Login test passed
+03-09-2026 04:07:06 PM - INFO - Home page title test passed
+03-09-2026 04:07:14 PM - INFO - Login test passed
+03-09-2026 04:11:35 PM - INFO - Home page title test passed
+03-09-2026 04:11:42 PM - INFO - Login test passed
+03-09-2026 04:12:59 PM - INFO - Home page title test passed
+03-09-2026 04:13:06 PM - INFO - Login test passed
+03-09-2026 04:14:13 PM - WARNING - The chromedriver version (146.0.7680.31) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (145.0.7632.160); currently, chromedriver 145.0.7632.117 is recommended for chrome 145.*, so it is advised to delete the driver in PATH and retry
+03-09-2026 04:14:15 PM - WARNING - The chromedriver version (146.0.7680.31) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (145.0.7632.160); currently, chromedriver 145.0.7632.117 is recommended for chrome 145.*, so it is advised to delete the driver in PATH and retry
+03-09-2026 04:20:59 PM - INFO - Home page title test passed
+03-09-2026 04:21:04 PM - INFO - Login test passed
