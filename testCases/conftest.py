@@ -7,11 +7,11 @@ from utilities.readProperties import ReadConfig
 def pytest_addoption(parser): # This will get the value from cli/hooks
     parser.addoption("--browser")
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="class")
 def browser(request): # This will return the browser value to setup method
     return request.config.getoption("--browser")
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="class")
 def setup(browser):
 
     if browser is None:
